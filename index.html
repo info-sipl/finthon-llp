@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finthon LLP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Finthon LLP</h1>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Login/Register</a>
+      </nav>
+      <div class="header-buttons">
+        <button class="btn-primary">Get Started</button>
+        <button class="btn-secondary">Talk to AI Assistant</button>
+      </div>
+    </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="container hero-content">
+      <h2 class="hero-title">Empowering Your Growth with <span class="highlight">AI-Driven Support</span></h2>
+      <div class="hero-buttons">
+        <button class="btn-primary">Explore Services</button>
+        <button class="btn-secondary">Chat with AI Assistant</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="highlights">
+    <div class="container highlight-grid">
+      <div class="highlight-item">
+        <div class="highlight-icon">🎓</div>
+        <h3 class="highlight-title">Educational Coaching</h3>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">🚀</div>
+        <h3 class="highlight-title">Startup Consultancy</h3>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">📜</div>
+        <h3 class="highlight-title">UDYAM/MSME Registration</h3>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">™️</div>
+        <h3 class="highlight-title">Trademark Services</h3>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">🪪</div>
+        <h3 class="highlight-title">PAN / Aadhar / Passport Help</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+  <div class="container about-grid">
+    
+   
+    <div class="about-text" data-aos="fade-right">
+      <h2 class="about-heading">About Us</h2>
+      <p class="about-subheading">Your Growth Partner in Education & Business</p>
+      <p class="about-description">
+        Finthon LLP, based in Kolkata, is dedicated to offering AI-enabled support in education,
+        consultancy, and essential registrations. We make processes faster, smarter, and simpler—
+        so you can focus on what matters most.
+      </p>
+      <div class="focus-areas">
+      <h3 class="focus-title">Main Focus Areas:</h3>
+      <div class="focus-blocks">
+        <div class="focus-block">
+          Educational Support
+          <div class="focus-desc">
+            Guidance and resources for students and institutions to enhance learning outcomes and academic success.
+          </div>
+        </div>
+        <div class="focus-block">
+          Agricultural Wholesale (B2B Support)
+          <div class="focus-desc">
+            Streamlined solutions for agricultural businesses, connecting suppliers and buyers for efficient B2B transactions.
+          </div>
+        </div>
+        <div class="focus-block">
+          Business Enablement Services
+          <div class="focus-desc">
+            Comprehensive support for startups and enterprises, including registration, compliance, and growth consultancy.
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+    <div class="about-image" data-aos="fade-left">
+      <img src="https://t3.ftcdn.net/jpg/02/36/99/22/360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg" alt="AI Assistant Illustration" />
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+  document.querySelectorAll('.focus-block').forEach(block => {
+    block.addEventListener('click', function() {
+      
+      document.querySelectorAll('.focus-block').forEach(b => {
+        if (b !== block) b.classList.remove('expanded');
+      });
+      
+      block.classList.toggle('expanded');
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.services-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05));
+}
+
+.section-title {
+  font-family: "Libre Baskerville", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;          
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: linear-gradient( to bottom right, rgb(105, 169, 243), rgb(248, 250, 252));
+  border: none;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+}
+
+.service-icon {
+  font-size: 60px;         
+  margin-bottom: 16px;
+}
+
+.service-title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 28px;          
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: rgb(31, 41, 55);
+}
+
+.service-desc {
+  font-family: Roboto;
+  font-size: 13px;         
+  color: rgb(75, 85, 99);
+  margin-bottom: 20px;
+}
+
+.service-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: rgb(37, 99, 235);
+  color: white;
+  font-size: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: rgb(29, 78, 216);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: rgb(37, 99, 235);
+  font-size: 15px;
+  padding: 10px 16px;
+  border: 1px solid rgb(37, 99, 235);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(37, 99, 235);
+  color: white;
+}

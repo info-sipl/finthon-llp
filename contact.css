@@ -1,0 +1,93 @@
+.contact-modern {
+  width: 100%;
+  padding: 0;
+}
+
+.-contact-container {
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(185, 199, 240) );
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+
+.section-head {
+  font-family: "Libre Baskerville", serif;
+  font-size: 36px;
+  color: rgb(8, 21, 51);
+  text-align: center;
+  margin: 40px 0;
+}
+
+.button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(3, 3, 4, 0.5);
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  max-width: 80%;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.button:hover {
+  background-color: rgb(1, 25, 52);
+  color: white;
+}
+
+.button:active {
+  background-color: rgb(202, 227, 255);
+  color: rgb(5, 0, 0);
+}
+
+.contact-left {
+  flex: 1;
+  background: url(https://www.rd.com/wp-content/uploads/2019/11/cat-10-e1573844975155-scaled.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+
+.contact-right {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-row {
+  margin-bottom: 24px;
+}
+
+.form-row label {
+  font-family: ""Libre Baskerville",", sans-serif;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.form-row p {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.6;
+}

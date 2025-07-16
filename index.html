@@ -4,7 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Finthon LLP</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="heropage.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="banner.css"/>
+  <link rel="stylesheet" href="services.css" />
+  <link rel="stylesheet" href="testimonials.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="chatbot.css" />
 </head>
 <body>
 
@@ -13,60 +27,33 @@
     <div class="container header-content">
       <h1 class="logo">Finthon LLP</h1>
       <nav class="nav">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-        <a href="#">Login/Register</a>
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login/Register</a>
       </nav>
       <div class="header-buttons">
         <button class="btn-primary">Get Started</button>
-        <button class="btn-secondary">Talk to AI Assistant</button>
+        <button  id="ai-assistant-btn-header" class="btn-secondary">Talk to AI Assistant</button>
       </div>
     </div>
   </header>
 
   
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="container hero-content">
       <h2 class="hero-title">Empowering Your Growth with <span class="highlight">AI-Driven Support</span></h2>
       <div class="hero-buttons">
         <button class="btn-primary">Explore Services</button>
-        <button class="btn-secondary">Chat with AI Assistant</button>
+        <button  id="ai-assistant-btn-hero" class="btn-secondary">Chat with AI Assistant</button>
       </div>
     </div>
   </section>
 
-  
-  <section class="highlights">
-    <div class="container highlight-grid">
-      <div class="highlight-item">
-        <div class="highlight-icon">🎓</div>
-        <h3 class="highlight-title">Educational Coaching</h3>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-icon">🚀</div>
-        <h3 class="highlight-title">Startup Consultancy</h3>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-icon">📜</div>
-        <h3 class="highlight-title">UDYAM/MSME Registration</h3>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-icon">™️</div>
-        <h3 class="highlight-title">Trademark Services</h3>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-icon">🪪</div>
-        <h3 class="highlight-title">PAN / Aadhar / Passport Help</h3>
-      </div>
-    </div>
-  </section>
 
-  <section class="about">
+  <section class="about" id="about">
   <div class="container about-grid">
-    
-   
     <div class="about-text" data-aos="fade-right">
       <h2 class="about-heading">About Us</h2>
       <p class="about-subheading">Your Growth Partner in Education & Business</p>
@@ -100,26 +87,306 @@
     </div>
     </div>
 
-    
     <div class="about-image" data-aos="fade-left">
       <img src="https://t3.ftcdn.net/jpg/02/36/99/22/360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg" alt="AI Assistant Illustration" />
     </div>
+  </div>
+</section>
 
+<section class="services-section" id="services">
+  <div class="container">
+    <h2 class="section-title" style="color: black;">What We Offer</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#415a8b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap-icon lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></div>
+        <h3 class="service-title">Educational Coaching</h3>
+        <p class="service-desc">Personalised coaching with expert mentors and AI-assist tools.</p>
+        <div class="service-actions">
+          <button class="btn-secondary">Know More</button>
+          <button class="btn-primary">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#415a8b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket-icon lucide-rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
+        <h3 class="service-title">Startup Consultancy</h3>
+        <p class="service-desc">Business planning, registration, funding guidance.</p>
+        <div class="service-actions">
+          <button class="btn-secondary">Know More</button>
+          <button class="btn-primary">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#415a8b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></div>
+        <h3 class="service-title">UDYAM (MSME) Registration</h3>
+        <p class="service-desc">Hassle-free UDYAM application with status tracking.</p>
+        <div class="service-actions">
+          <button class="btn-secondary">Know More</button>
+          <button class="btn-primary">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#415a8b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tickets-icon lucide-tickets"><path d="m4.5 8 10.58-5.06a1 1 0 0 1 1.342.488L18.5 8"/><path d="M6 10V8"/><path d="M6 14v1"/><path d="M6 19v2"/><rect x="2" y="8" width="20" height="13" rx="2"/></svg></div>
+        <h3 class="service-title">Trademark Registration</h3>
+        <p class="service-desc">Secure your brand identity with our easy online filing.</p>
+        <div class="service-actions">
+          <button class="btn-secondary">Know More</button>
+          <button class="btn-primary">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#415a8b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt-text-icon lucide-receipt-text"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M14 8H8"/><path d="M16 12H8"/><path d="M13 16H8"/></svg></div>
+        <h3 class="service-title">Trade License</h3>
+        <p class="service-desc">End-to-end help for obtaining and renewing trade licenses.</p>
+        <div class="service-actions">
+          <button class="btn-secondary">Know More</button>
+          <button class="btn-primary">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#415a8b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-id-card-icon lucide-id-card"><path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg></div>
+        <h3 class="service-title">PAN Card Application</h3>
+        <p class="service-desc">Apply online with document support and follow-ups.</p>
+        <div class="service-actions">
+          <button class="btn-secondary">Know More</button>
+          <button class="btn-primary">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#415a8b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth-icon lucide-earth"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><circle cx="12" cy="12" r="10"/></svg></div>
+        <h3 class="service-title">Aadhar Assistance</h3>
+        <p class="service-desc">Guided process for new/updated Aadhar applications.</p>
+        <div class="service-actions">
+          <button class="btn-secondary">Know More</button>
+          <button class="btn-primary">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#415a8b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-user-icon lucide-file-user"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M15 18a3 3 0 1 0-6 0"/><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><circle cx="12" cy="13" r="2"/></svg></div>
+        <h3 class="service-title">Passport Application Help</h3>
+        <p class="service-desc">Step-by-step assistance from document prep to appointment.</p>
+        <div class="service-actions">
+          <button class="btn-secondary">Know More</button>
+          <button class="btn-primary">Apply Now</button>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
 
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div>
+      <p class="testimonial-subtitle">
+        Our clients love how we simplify complex processes with our AI-driven solutions.
+        Here are some of their experiences:
+      </p>
+    </div>
+    <div class="testimonial-carousel">
+      <div class="testimonial-track">
+
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">
+            “FYNPYTHON LLP helped me get my MSME registration done in 2 days with zero stress.”
+          </p>
+          <p class="testimonial-author">— Ravi S., Startup Founder</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">
+            “Their AI chatbot guided me through my PAN application in under 10 minutes.”
+          </p>
+          <p class="testimonial-author">— Pooja M., Freelancer</p>
+        </div>
+
+      </div>
+
+   
+      <div class="testimonial-nav">
+        <button class="nav-btn prev-btn">&#8592;</button>
+        <button class="nav-btn next-btn">&#8594;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-content">
+    <h2 class="cta-title">Ready to simplify your journey?</h2>
+    <p class="cta-subtitle">Let FYNPYTHON LLP guide your next step.</p>
+    <div class="cta-buttons">
+      <a href="#contact" class="btn-primary">Book Free Consultation</a>
+      <a href="#services" class="btn-secondary">Start a Service</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="contact-modern" id="contact">
+  <div class="-contact-container">
+   <h2 class="section-head">Get in Touch</h2>
+  <div class="grid-container">
+    <div class="contact-left">
+      <div class="contact-overlay">
+      <button onclick="window.location.href='registration.html'" class="button">Register/Login</button>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <form class="contact-form">
+
+        <div class="form-row">
+          <label>📍 Address</label>
+          <p>11 Mandir Road, Gorabazar, Dum Dum Cantonment,<br>Kolkata, West Bengal – 700028, India</p>
+        </div>
+
+        <div class="form-row">
+          <label>📞 Phone</label>
+          <p>+91-XXXXXXXXXX</p>
+        </div>
+
+        <div class="form-row">
+          <label>📧 Email</label>
+          <p>info@fynpython.in</p>
+        </div>
+
+        <div class="form-row">
+          <label>🕒 Hours</label>
+          <p>Mon–Sat: 10:00 AM – 6:00 PM</p>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div id="registration-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" id="close-registration">&times;</span>
+    <h3>Registration</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit" class="btn-primary">Register</button>
+    </form>
+  </div>
+</div>
+
+
+
+<div class="chatbot-container" id="chatbot">
+  <div class="chatbot-header">
+    <span>🤖 AI Assistant</span>
+    <button class="chatbot-close" onclick="toggleChatbot()">×</button>
+  </div>
+  <div class="chatbot-body">
+    <p><strong>How can I help you today?</strong></p>
+    <p class="subtext">(I can help with MSME registration, PAN card, coaching help, and more!)</p>
+    <ul class="chatbot-list">
+      <li>✅ Instant eligibility checks</li>
+      <li>✅ Application status updates</li>
+      <li>✅ Document checklist automation</li>
+      <li>✅ Appointment scheduling</li>
+    </ul>
+  </div>
+  <div class="chatbot-footer">
+    <input type="text" id="chatbot-input" placeholder="Type your message..." />
+    <button id="chatbot-send">Send</button>
+  </div>
+</div>
+
+<button class="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+
+
+
 <script>
+  document.getElementById('ai-assistant-btn-header').onclick = function() {
+    document.getElementById("chatbot").style.display = "flex";
+  };
+  document.getElementById('ai-assistant-btn-hero').onclick = function() {
+    document.getElementById("chatbot").style.display = "flex";
+  };
+
+  document.querySelector('.contact-overlay button').onclick = function(e) {
+    e.preventDefault();
+    document.getElementById('registration-modal').style.display = 'flex';
+  };
+  document.getElementById('close-registration').onclick = function() {
+    document.getElementById('registration-modal').style.display = 'none';
+  };
+  window.onclick = function(event) {
+    const modal = document.getElementById('registration-modal');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
+
   document.querySelectorAll('.focus-block').forEach(block => {
     block.addEventListener('click', function() {
-      
       document.querySelectorAll('.focus-block').forEach(b => {
         if (b !== block) b.classList.remove('expanded');
       });
-      
       block.classList.toggle('expanded');
     });
   });
+
+  const track = document.querySelector('.testimonial-track');
+  const cards = document.querySelectorAll('.testimonial-card');
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    updateCarousel();
+  });
+
+  
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    updateCarousel();
+  }, 6000);
+
+
+  function toggleChatbot() {
+    const bot = document.getElementById("chatbot");
+    bot.style.display = bot.style.display === "flex" ? "none" : "flex";
+  }
+
+  document.getElementById('chatbot-send').onclick = function() {
+    const input = document.getElementById('chatbot-input');
+    const msg = input.value.trim();
+    if (msg) {
+      const body = document.querySelector('.chatbot-body');
+      const p = document.createElement('p');
+      p.textContent = "You: " + msg;
+      body.appendChild(p);
+      input.value = '';
+      body.scrollTop = body.scrollHeight;
+    }
+  };
 </script>
 </body>
 </html>

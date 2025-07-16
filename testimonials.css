@@ -1,0 +1,85 @@
+.testimonials-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, rgba(10, 13, 69, 0.8), rgba(0, 0, 0, 0.8));
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 32px;
+  color: rgb(189, 215, 255);
+  margin-bottom: 40px;
+}
+
+.testimonial-subtitle{
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+  color: rgb(180, 180, 180);
+  margin-bottom: 20px;
+}
+
+.testimonial-carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  background: rgba(0, 0, 0,0.8);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.stars {
+  font-size: 20px;
+  color: rgba(250, 204, 21, 0.8); 
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  color: rgb(189, 215, 255);
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(189, 215, 255, 0.7);
+}
+
+.testimonial-nav {
+  margin-top: 20px;
+}
+
+.nav-btn {
+  background: rgba(159, 190, 255, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.nav-btn:hover {
+  background: rgb(0, 5, 20);
+  color: rgb(142, 178, 255);
+}
+
+.nav-btn:active{
+  background: rgb(124, 145, 191);
+  color: rgb(0, 23, 71);
+}

@@ -1,6 +1,6 @@
 .services-section {
   padding: 60px 20px;
-  background: linear-gradient(to right, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05));
+  background: radial-gradient(rgba(255, 212, 102, 0.5) , rgb(1, 68, 33, 0.6));
 }
 
 .section-title {
@@ -20,12 +20,12 @@
 }
 
 .service-card {
-  background: linear-gradient( to bottom right, rgb(105, 169, 243), rgb(248, 250, 252));
+  background: linear-gradient( to bottom right, rgba(255, 212, 102, 0.5), rgb(249, 246, 240));
   border: none;
   border-radius: 16px;
   padding: 24px;
   text-align: center;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+  box-shadow: 0 6px 12px rgba(1, 68, 33, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -44,13 +44,14 @@
   font-size: 28px;          
   font-weight: 500;
   margin-bottom: 10px;
-  color: rgb(31, 41, 55);
+  color: rgb(1, 68, 33);
 }
 
 .service-desc {
   font-family: Roboto;
   font-size: 13px;         
-  color: rgb(75, 85, 99);
+    color: rgb(1, 68, 33);
+  opacity: 0.6;
   margin-bottom: 20px;
 }
 
@@ -62,8 +63,8 @@
 }
 
 .btn-primary {
-  background-color: rgb(37, 99, 235);
-  color: white;
+  background-color: rgb(1, 68, 33);
+  color: rgb(249, 246, 240);
   font-size: 15px;
   padding: 10px 16px;
   border: none;
@@ -74,15 +75,16 @@
 }
 
 .btn-primary:hover {
-  background-color: rgb(29, 78, 216);
+  background-color:rgb(249, 246, 240);
+  color: rgb(1, 68, 33);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: rgb(37, 99, 235);
+  color: rgb(1, 68, 33);
   font-size: 15px;
   padding: 10px 16px;
-  border: 1px solid rgb(37, 99, 235);
+  border: 1px solid rgba(1, 68, 33, 0.6);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
@@ -90,6 +92,6 @@
 }
 
 .btn-secondary:hover {
-  background-color: rgb(37, 99, 235);
-  color: white;
+  background-color: rgb(1, 68, 33);
+  color:rgb(249, 246, 240);
 }

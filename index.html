@@ -393,10 +393,16 @@
     }
   };
 
-  const hamburger = document.getElementById('hamburger');
+ const hamburger = document.getElementById('hamburger');
   const nav = document.querySelector('.nav');
+  const navClose = document.getElementById('nav-close');
+
   hamburger.addEventListener('click', function() {
     nav.classList.toggle('active');
+  });
+
+  navClose.addEventListener('click', function() {
+    nav.classList.remove('active');
   });
 </script>
 </body>

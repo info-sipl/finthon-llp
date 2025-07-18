@@ -15,7 +15,7 @@
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@
 .service-desc {
   font-family: Roboto;
   font-size: 13px;         
-    color: rgb(1, 68, 33);
+  color: rgb(1, 68, 33);
   opacity: 0.6;
   margin-bottom: 20px;
 }

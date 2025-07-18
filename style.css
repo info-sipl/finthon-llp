@@ -7,6 +7,15 @@ body {
   margin: 0;
 }
 
+html, body {
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -121,20 +130,21 @@ body {
     position: absolute;
     top: 60px;
     left: 0;
-    width: 100vw;
+    width: 100%;
     background: rgba(255, 212, 102, 0.7);
     box-shadow: 0 8px 32px rgba(1, 68, 33, 0.18);
-    border-bottom: 2px solid #CBA135;
+    border-bottom: 2px solid rgb(203, 161, 53);
     border-radius: 0 0 18px 18px;
     padding: 32px 0 24px 0;
     text-align: center;
     backdrop-filter: blur(8px);
   }
   .nav a {
+    max-width: 100%;
     display: block;
     margin: 18px 0;
     font-size: 22px;
-    color: #014421;
+    color: rgb(1, 68, 33);
     font-weight: 500;
     letter-spacing: 1px;
     transition: color 0.2s, background 0.2s;
@@ -143,6 +153,7 @@ body {
   }
 }
 
+
 .nav-close {
   position: absolute;
   top: 18px;
@@ -150,14 +161,14 @@ body {
   background: none;
   border: none;
   font-size: 32px;
-  color: #014421;
+  color: rgb(1, 68, 33);
   cursor: pointer;
   z-index: 10;
   transition: color 0.2s;
 }
 
 .nav-close:hover {
-  color: #CBA135;
+  color: rgb(203, 161, 53);
 }
 
 
@@ -165,10 +176,11 @@ body {
     text-align: left;
     padding: 100px 0 60px 0;
     background:
-    linear-gradient(to right, rgba(1, 68, 33, 0.851) 20%, rgba(203, 161, 53, 0.25)),
+    linear-gradient(to right, rgba(1, 68, 33, 0.851) 20%, rgba(203, 161 , 53, 0.25)),
     url('https://images.pexels.com/photos/8550655/pexels-photo-8550655.jpeg?_gl=1*ir35z2*_ga*OTIxNjI1ODM2LjE3NTE1NDQwNDI.*_ga_8JE65Q40S6*czE3NTI3MzAzMzUkbzIkZzAkdDE3NTI3MzAzMzUkajYwJGwwJGgw') center/cover no-repeat;
     min-height: 600px;
     position: relative;
+    max-width: 100%;
 }
 
 .hero-title {

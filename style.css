@@ -109,22 +109,37 @@ body {
   }
   .nav {
     display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1);
+    backdrop-filter: blur(0px);
   }
   .nav.active {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
     position: absolute;
     top: 60px;
     left: 0;
     width: 100vw;
-    background: rgba(255, 212, 102, 0.5) ;
-    box-shadow: 0 4px 24px rgba(1, 68, 33, 0.10);
-    padding: 24px 0;
+    background: rgba(255, 212, 102, 0.7);
+    box-shadow: 0 8px 32px rgba(1, 68, 33, 0.18);
+    border-bottom: 2px solid #CBA135;
+    border-radius: 0 0 18px 18px;
+    padding: 32px 0 24px 0;
     text-align: center;
+    backdrop-filter: blur(8px);
   }
   .nav a {
     display: block;
-    margin: 16px 0;
-    font-size: 20px;
+    margin: 18px 0;
+    font-size: 22px;
+    color: #014421;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s, background 0.2s;
+    border-radius: 8px;
+    padding: 8px 0;
   }
 }
 

@@ -116,7 +116,7 @@ body {
     top: 60px;
     left: 0;
     width: 100vw;
-    background: rgb(249, 246, 240);
+    background: rgba(255, 212, 102, 0.5) ;
     box-shadow: 0 4px 24px rgba(1, 68, 33, 0.10);
     padding: 24px 0;
     text-align: center;

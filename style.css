@@ -143,6 +143,23 @@ body {
   }
 }
 
+.nav-close {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #014421;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+}
+
+.nav-close:hover {
+  color: #CBA135;
+}
+
 
 .hero {
     text-align: left;

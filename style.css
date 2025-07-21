@@ -128,11 +128,10 @@ html, body {
    font-size: 28px; 
    display: flex;
    aligh-items:center;
-   text-align: center;
-   gap: 12px;
    weight: 400px;
    background: none;
    border: none;
+   color:rgb(1, 68, 33);
   }
   
 
@@ -247,7 +246,7 @@ img, .hero {
   .hero {
     padding: 60px 0 40px 0;
     min-height: 400px;
-    margin-top: 200px; 
+    margin-top: 180px; 
   }
   .hero-title {
     font-size: 36px;

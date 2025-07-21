@@ -110,43 +110,28 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    text-align: center;
-    gap: 16px;
-  }
+ .header-content {
+   display: flex;
+   aligh-items:center;
+   text-align: center;
+   gap: 12px;
+ }
 
-  .logo {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  .header-buttons {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 240px; 
-    gap: 10px;
-    left: 20px;
-  }
-
-  .btn-primary-head,
-  .btn-secondary-head {
-    width: 100%; 
-    text-align: center;
-    left: 20px;
-    align-items: center;
+  .btn-secondary-head, .btn-primary-head {
+    display: flex;
+   aligh-items:center;
+   text-align: center;
+   gap: 12px;
   }
 
   .hamburger {
-    display: block;
-    align-self: center;
-    font-size: 28px;
-    margin-top: 8px;
-    border: none;
+   display: flex;
+   aligh-items:center;
+   text-align: center;
+   gap: 12px;
+   weight: 200px;
   }
+  
 
   .nav {
     display: none;

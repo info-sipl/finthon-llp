@@ -130,6 +130,8 @@ html, body {
    text-align: center;
    gap: 12px;
    weight: 200px;
+   background: none;
+   border: none;
   }
   
 

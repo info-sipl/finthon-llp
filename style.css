@@ -109,6 +109,11 @@ html, body {
 }
 
 @media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
   .hamburger {
     display: block;
     font-size: 32px;

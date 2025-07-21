@@ -129,12 +129,15 @@ html, body {
     width: 100%;
     max-width: 240px; 
     gap: 10px;
+    left: 20px;
   }
 
   .btn-primary-head,
   .btn-secondary-head {
     width: 100%; 
     text-align: center;
+    left: 20px;
+    align-items: center;
   }
 
   .hamburger {
@@ -142,6 +145,7 @@ html, body {
     align-self: center;
     font-size: 28px;
     margin-top: 8px;
+    border: none;
   }
 
   .nav {

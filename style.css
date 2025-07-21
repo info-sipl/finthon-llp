@@ -119,9 +119,9 @@ html, body {
   .header-buttons {
     flex-direction: column;
     gap: 8px;
+    align-items: center;
     width: 100%;
     max-width: 200px;
-    align-items: center;
   }
 
   .hamburger {

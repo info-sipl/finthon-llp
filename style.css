@@ -125,6 +125,7 @@ html, body {
   }
 
   .hamburger {
+   font-size: 28px; 
    display: flex;
    aligh-items:center;
    text-align: center;
@@ -132,7 +133,6 @@ html, body {
    weight: 400px;
    background: none;
    border: none;
-   height: 20px;
   }
   
 

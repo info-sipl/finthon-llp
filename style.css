@@ -127,7 +127,7 @@ html, body {
   .hamburger {
    font-size: 28px; 
    display: flex;
-   aligh-items:center;
+   text-align: center;
    weight: 400px;
    background: none;
    border: none;
@@ -246,7 +246,7 @@ img, .hero {
   .hero {
     padding: 60px 0 40px 0;
     min-height: 400px;
-    margin-top: 180px; 
+    margin-top: 190px; 
   }
   .hero-title {
     font-size: 36px;

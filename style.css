@@ -112,33 +112,38 @@ html, body {
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    justify-content: center;
     text-align: center;
     gap: 16px;
   }
 
-   .header-buttons {
+  .logo {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .header-buttons {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 260px; 
+    max-width: 240px; 
     gap: 10px;
   }
 
   .btn-primary-head,
   .btn-secondary-head {
     width: 100%; 
+    text-align: center;
   }
 
   .hamburger {
     display: block;
-    font-size: 32px;
-    background: none;
-    border: none;
-    color: rgb(1, 68, 33);
-    cursor: pointer;
+    align-self: center;
+    font-size: 28px;
     margin-top: 8px;
   }
+
   .nav {
     display: none;
     opacity: 0;

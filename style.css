@@ -142,9 +142,10 @@ html, body {
   display: block;
   align-self: center;
   font-size: 28px;
-  margin: 8px auto 0 auto; /* Center horizontally */
+  margin: 8px auto 0 auto; 
   border: none;
   background: none;
+  color: rgb(1, 68, 33);
   padding: 0;
   cursor: pointer;
 }

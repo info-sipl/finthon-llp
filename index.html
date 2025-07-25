@@ -12,13 +12,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="about.css" />
-  <link rel="stylesheet" href="banner.css"/>
-  <link rel="stylesheet" href="services.css" />
-  <link rel="stylesheet" href="testimonials.css" />
-  <link rel="stylesheet" href="contact.css" />
-  <link rel="stylesheet" href="chatbot.css" />
+  <link rel="stylesheet" href="style.css/heropage.css" />
+  <link rel="stylesheet" href="style.css/about.css" />
+  <link rel="stylesheet" href="style.css/banner.css"/>
+  <link rel="stylesheet" href="style.css/services.css" />
+  <link rel="stylesheet" href="style.css/testimonials.css" />
+  <link rel="stylesheet" href="style.css/contact.css" />
+  <link rel="stylesheet" href="style.css/chatbot.css" />
 </head>
 <body>
 
@@ -26,9 +26,6 @@
   <header class="header">
     <div class="container header-content">
       <h1 class="logo">FynPython LLP</h1>
-
-      
-
      
       <nav class="nav">
          <button class="nav-close" id="nav-close">&times;</button>
@@ -43,7 +40,6 @@
         <button class="btn-primary-head">Get Started</button>
         <button  id="ai-assistant-btn-header" class="btn-secondary-head">Talk to AI Assistant</button>
         <button class="hamburger" id="hamburger">&#9776;</button>
-        
       </div>
     </div>
   </header>
@@ -53,7 +49,7 @@
     <div class="container hero-content">
       <h2 class="hero-title">Empowering Your Growth with <span class="highlight">AI-Driven Support</span></h2>
       <div class="hero-buttons">
-        <button class="btn-primary-head">Explore Services</button>
+        <a href="#services" class="btn-primary-head">Explore Services</a>
         <button  id="ai-assistant-btn-hero" class="btn-secondary-head">Chat with AI Assistant</button>
       </div>
     </div>
@@ -110,8 +106,8 @@
         <h3 class="service-title">Educational Coaching</h3>
         <p class="service-desc">Personalised coaching with expert mentors and AI-assist tools.</p>
         <div class="service-actions">
-          <button class="btn-secondary">Know More</button>
-          <button class="btn-primary">Apply Now</button>
+          <a href="education.html" class="btn-secondary">Know More</a>
+          <a href="#contact" class="btn-primary">Apply Now</a>
         </div>
       </div>
 
@@ -120,8 +116,8 @@
         <h3 class="service-title">Startup Consultancy</h3>
         <p class="service-desc">Business planning, registration, funding guidance.</p>
         <div class="service-actions">
-          <button class="btn-secondary">Know More</button>
-          <button class="btn-primary">Apply Now</button>
+          <a href="education.html" class="btn-secondary">Know More</a>
+          <a href="#contact" class="btn-primary">Apply Now</a>
         </div>
       </div>
 
@@ -130,8 +126,8 @@
         <h3 class="service-title">UDYAM (MSME) Registration</h3>
         <p class="service-desc">Hassle-free UDYAM application with status tracking.</p>
         <div class="service-actions">
-          <button class="btn-secondary">Know More</button>
-          <button class="btn-primary">Apply Now</button>
+          <a href="education.html" class="btn-secondary">Know More</a>
+          <a href="#contact" class="btn-primary">Apply Now</a>
         </div>
       </div>
 
@@ -140,8 +136,8 @@
         <h3 class="service-title">Trademark Registration</h3>
         <p class="service-desc">Secure your brand identity with our easy online filing.</p>
         <div class="service-actions">
-          <button class="btn-secondary">Know More</button>
-          <button class="btn-primary">Apply Now</button>
+          <a href="education.html" class="btn-secondary">Know More</a>
+          <a href="#contact" class="btn-primary">Apply Now</a>
         </div>
       </div>
 
@@ -150,8 +146,8 @@
         <h3 class="service-title">Trade License</h3>
         <p class="service-desc">End-to-end help for obtaining and renewing trade licenses.</p>
         <div class="service-actions">
-          <button class="btn-secondary">Know More</button>
-          <button class="btn-primary">Apply Now</button>
+          <a href="education.html" class="btn-secondary">Know More</a>
+          <a href="#contact" class="btn-primary">Apply Now</a>
         </div>
       </div>
 
@@ -160,8 +156,8 @@
         <h3 class="service-title">PAN Card Application</h3>
         <p class="service-desc">Apply online with document support and follow-ups.</p>
         <div class="service-actions">
-          <button class="btn-secondary">Know More</button>
-          <button class="btn-primary">Apply Now</button>
+          <a href="education.html" class="btn-secondary">Know More</a>
+          <a href="#contact" class="btn-primary">Apply Now</a>
         </div>
       </div>
 
@@ -170,8 +166,8 @@
         <h3 class="service-title">Aadhar Assistance</h3>
         <p class="service-desc">Guided process for new/updated Aadhar applications.</p>
         <div class="service-actions">
-          <button class="btn-secondary">Know More</button>
-          <button class="btn-primary">Apply Now</button>
+          <a href="education.html" class="btn-secondary">Know More</a>
+          <a href="#contact" class="btn-primary">Apply Now</a>
         </div>
       </div>
 
@@ -180,8 +176,8 @@
         <h3 class="service-title">Passport Application Help</h3>
         <p class="service-desc">Step-by-step assistance from document prep to appointment.</p>
         <div class="service-actions">
-          <button class="btn-secondary">Know More</button>
-          <button class="btn-primary">Apply Now</button>
+          <a href="education.html" class="btn-secondary">Know More</a>button class="btn-secondary">Know More</button>
+          <a href="#contact" class="btn-primary">Apply Now</a>
         </div>
       </div>
 
@@ -287,11 +283,42 @@
     <h3 class="registration">Registration</h3>
     <form>
       <input class="name" type="text" placeholder="Your Name" required>
-      <input  class="email" type="email" placeholder="Email" required>
-      <button class="submit" type="submit" class="btn-primary">Register</button>
+      <input class="email" type="email" placeholder="Email" required>
+      <input class="password" type="password" placeholder="Password" required>
+      
+      <select class="service" required>
+        <option value="" disabled selected>Select Service</option>
+        <option value="web">Web Development</option>
+        <option value="design">UI/UX Design</option>
+        <option value="seo">SEO Optimization</option>
+        <option value="marketing">Digital Marketing</option>
+      </select>
+
+      <button class="submit" type="submit">Register</button>
+      <p class="login-link">
+        Already have an account? <a href="#" id="open-login">Login</a>
+      </p>
     </form>
   </div>
 </div>
+
+
+
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" id="close-login">&times;</span>
+    <h3 class="login-title">Login</h3>
+    <form>
+      <input class="email" type="email" placeholder="Email" required>
+      <input class="password" type="password" placeholder="Password" required>
+      <button class="submit" type="submit">Login</button>
+      <p class="login-link">
+        Don’t have an account? <a href="#" id="open-registration-link">Register</a>
+      </p>
+    </form>
+  </div>
+</div>
+
 
 
 
@@ -322,6 +349,7 @@
 
 <script>
 
+
   document.getElementById('ai-assistant-btn-header').onclick = function() {
     document.getElementById("chatbot").style.display = "flex";
   };
@@ -329,26 +357,42 @@
     document.getElementById("chatbot").style.display = "flex";
   };
 
-  document.querySelector('.contact-overlay button').onclick = function(e) {
-    e.preventDefault();
-  document.getElementById('registration-modal').style.display = 'flex';
-  };
-  document.getElementById('close-registration').onclick = function() {
-    document.getElementById('registration-modal').style.display = 'none';
-  };
-  window.onclick = function(event) {
-    const modal = document.getElementById('registration-modal');
-    if (event.target === modal) {
-      modal.style.display = 'none';
-    }
-  };
 
-  document.getElementById('open-registration').onclick = function(e) {
+
+
+document.querySelector('.contact-overlay button').onclick = function(e) {
   e.preventDefault();
   document.getElementById('registration-modal').style.display = 'flex';
-
-  document.querySelector('.nav').classList.remove('active');
 };
+
+document.getElementById('close-registration').onclick = function() {
+  document.getElementById('registration-modal').style.display = 'none';
+};
+
+document.getElementById('open-login').onclick = function(e) {
+  e.preventDefault();
+  document.getElementById('registration-modal').style.display = 'none';
+  document.getElementById('login-modal').style.display = 'flex';
+};
+
+document.getElementById('close-login').onclick = function() {
+  document.getElementById('login-modal').style.display = 'none';
+};
+
+document.getElementById('open-registration-link').onclick = function(e) {
+  e.preventDefault();
+  document.getElementById('login-modal').style.display = 'none';
+  document.getElementById('registration-modal').style.display = 'flex';
+};
+
+window.onclick = function(event) {
+  const regModal = document.getElementById('registration-modal');
+  const loginModal = document.getElementById('login-modal');
+  if (event.target === regModal) regModal.style.display = 'none';
+  if (event.target === loginModal) loginModal.style.display = 'none';
+};
+
+
 
 
   document.querySelectorAll('.focus-block').forEach(block => {

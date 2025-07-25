@@ -111,12 +111,12 @@ html, body {
 
 @media (max-width: 768px) {
   .header-content {
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
-  text-align: center;
-  gap: 16px;
-}
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+  }
 
   .logo {
     font-size: 22px;
@@ -124,14 +124,13 @@ html, body {
   }
 
   .header-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 240px; 
-  gap: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 240px; 
+    gap: 10px;
+  }
 
   .btn-primary-head,
   .btn-secondary-head {
@@ -140,11 +139,11 @@ html, body {
   }
 
   .hamburger {
-  display: block;
-  align-self: center;
-  font-size: 28px;
-  margin: 8px auto 0 auto;
-}
+    display: block;
+    align-self: center;
+    font-size: 28px;
+    margin-top: 8px;
+  }
   .nav {
     display: none;
     opacity: 0;
@@ -160,6 +159,7 @@ html, body {
   transform: translateY(0);
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   background: rgb(255, 212, 102); 
@@ -187,7 +187,14 @@ html, body {
   }
 }
 
-
+.hamburger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
 
 .nav-close {
   display: none;

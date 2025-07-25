@@ -110,33 +110,41 @@ html, body {
 }
 
 @media (max-width: 768px) {
- .header-content {
-   display: flex;
-   aligh-items:center;
-   text-align: center;
-   gap: 12px;
- }
+  .header-content {
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
 
-  .btn-secondary-head, .btn-primary-head {
-    display: flex;
-   aligh-items:center;
-   text-align: center;
-   gap: 12px;
+  .logo {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .header-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 240px; 
+  gap: 10px;
+}
+
+  .btn-primary-head,
+  .btn-secondary-head {
+    width: 100%; 
+    text-align: center;
   }
 
   .hamburger {
-    left:20px;
-   font-size: 28px; 
-   display: flex;
-   text-align: center;
-   weight: 400px;
-   background: none;
-   border: none;
-   color:rgb(1, 68, 33);
-    margin: 0;
-  }
-  
-
+  display: block;
+  align-self: center;
+  font-size: 28px;
+  margin: 8px auto 0 auto;
+}
   .nav {
     display: none;
     opacity: 0;
@@ -178,6 +186,8 @@ html, body {
     padding: 8px 0;
   }
 }
+
+
 
 .nav-close {
   display: none;
@@ -247,7 +257,7 @@ img, .hero {
   .hero {
     padding: 60px 0 40px 0;
     min-height: 400px;
-    margin-top: 190px; 
+    margin-top: 100px; 
   }
   .hero-title {
     font-size: 36px;

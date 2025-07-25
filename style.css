@@ -143,7 +143,11 @@ html, body {
     align-self: center;
     font-size: 28px;
     margin-top: 8px;
+    border: none;
+    border-color: none;
+    color: rgb(249, 246, 240);
   }
+  
   .nav {
     display: none;
     opacity: 0;

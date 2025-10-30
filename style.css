@@ -141,7 +141,7 @@ html, body {
     order: 1;
     display: flex;
     align-items: center;
-    justify-content: center; /* center image + text */
+    justify-content: center;
     gap: 10px;
     text-align: center;
     width: 100%;
@@ -449,6 +449,7 @@ img, .hero {
   color: rgb(1, 68, 33);
   margin-bottom: 16px;
 }
+
 
 
 

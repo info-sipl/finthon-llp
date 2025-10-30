@@ -64,15 +64,25 @@ html, body {
 }
 
 
-@media (max-width: 480px) {
-  .logo img {
-    height: 36px;
-    max-height: 36px;
-  }
+@media (max-width: 768px) {
   .header-content {
-    padding: 10px 12px;
+    justify-content: center; 
+    position: relative;  
   }
-}
+
+  .logo {
+    margin: 0;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 44px;   
+    max-height: 44px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+  }
 
 
 .logo, .logo h1, .logo h2 {
@@ -441,5 +451,6 @@ img, .hero {
   color: rgb(1, 68, 33);
   margin-bottom: 16px;
 }
+
 
 

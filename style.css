@@ -229,7 +229,6 @@ html, body {
     border-radius: 8px;
     padding: 8px 0;
   }
-}
 
 .hamburger {
   display: none;
@@ -447,6 +446,7 @@ img, .hero {
   color: rgb(1, 68, 33);
   margin-bottom: 16px;
 }
+
 
 
 

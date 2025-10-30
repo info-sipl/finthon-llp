@@ -66,25 +66,32 @@ html, body {
 
 @media (max-width: 768px) {
   .header-content {
-    justify-content: center; 
-    position: relative;  
+    position: relative; /* allow absolute positioning of logo/hamburger */
+    justify-content: center; /* fallback centering */
+    padding: 12px 16px;
   }
 
   .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
     margin: 0;
-    display: flex;
+    text-align: center;
+    display: inline-flex;
     align-items: center;
+    gap: 8px;
   }
 
   .logo img {
-    height: 44px;   
+    height: 44px;
     max-height: 44px;
     width: auto;
     display: block;
     object-fit: contain;
-    margin: 0 auto;
   }
-
 }
 
 
@@ -450,6 +457,7 @@ img, .hero {
   color: rgb(1, 68, 33);
   margin-bottom: 16px;
 }
+
 
 
 

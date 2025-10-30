@@ -72,7 +72,8 @@ html, body {
 
   .logo {
     margin: 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
   }
 
   .logo img {
@@ -451,6 +452,7 @@ img, .hero {
   color: rgb(1, 68, 33);
   margin-bottom: 16px;
 }
+
 
 
 

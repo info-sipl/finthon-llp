@@ -1,6 +1,6 @@
 .services-section {
   padding: 60px 20px;
-  background: radial-gradient(rgba(255, 212, 102, 0.5) , rgb(1, 68, 33, 0.6));
+  background: radial-gradient(rgba(92, 179, 255, 0.946) , rgba(255, 255, 255, 0.801));
 }
 
 .section-title {
@@ -20,12 +20,12 @@
 }
 
 .service-card {
-  background: linear-gradient( to bottom right, rgba(255, 212, 102, 0.5), rgb(249, 246, 240));
+  background: linear-gradient( to bottom right, rgba(102, 163, 255, 0.5), rgb(252, 252, 251));
   border: none;
   border-radius: 16px;
   padding: 24px;
   text-align: center;
-  box-shadow: 0 6px 12px rgba(1, 68, 33, 0.1);
+  box-shadow: 0 6px 12px rgba(1, 12, 68, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -44,13 +44,13 @@
   font-size: 28px;          
   font-weight: 500;
   margin-bottom: 10px;
-  color: rgb(1, 68, 33);
+  color: rgb(1, 17, 68);
 }
 
 .service-desc {
   font-family: Roboto;
   font-size: 13px;         
-  color: rgb(1, 68, 33);
+  color: rgb(1, 13, 68);
   opacity: 0.6;
   margin-bottom: 20px;
 }
@@ -64,8 +64,8 @@
 
 .btn-primary {
   font-family: Roboto;
-  background-color: rgb(1, 68, 33);
-  color: rgb(249, 246, 240);
+  background-color: rgb(1, 14, 68);
+  color: rgb(255, 255, 255);
   font-size: 15px;
   padding: 10px 16px;
   border: none;
@@ -77,17 +77,17 @@
 }
 
 .btn-primary:hover {
-  background-color:rgb(249, 246, 240);
-  color: rgb(1, 68, 33);
+  background-color:rgb(255, 255, 255);
+  color: rgb(1, 13, 68);
 }
 
 .btn-secondary {
   font-family: Roboto;
   background-color: transparent;
-  color: rgb(1, 68, 33);
+  color: rgb(1, 22, 68);
   font-size: 15px;
   padding: 10px 16px;
-  border: 1px solid rgba(1, 68, 33, 0.6);
+  border: 1px solid rgba(1, 9, 68, 0.6);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
@@ -96,6 +96,6 @@
 }
 
 .btn-secondary:hover {
-  background-color: rgb(1, 68, 33);
-  color:rgb(249, 246, 240);
+  background-color: rgb(1, 7, 68);
+  color:rgb(255, 255, 255);
 }

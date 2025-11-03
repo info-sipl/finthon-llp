@@ -360,39 +360,6 @@
 
 
 
-document.querySelector('.contact-overlay button').onclick = function(e) {
-  e.preventDefault();
-  document.getElementById('registration-modal').style.display = 'flex';
-};
-
-document.getElementById('close-registration').onclick = function() {
-  document.getElementById('registration-modal').style.display = 'none';
-};
-
-document.getElementById('open-login').onclick = function(e) {
-  e.preventDefault();
-  document.getElementById('registration-modal').style.display = 'none';
-  document.getElementById('login-modal').style.display = 'flex';
-};
-
-document.getElementById('close-login').onclick = function() {
-  document.getElementById('login-modal').style.display = 'none';
-};
-
-document.getElementById('open-registration-link').onclick = function(e) {
-  e.preventDefault();
-  document.getElementById('login-modal').style.display = 'none';
-  document.getElementById('registration-modal').style.display = 'flex';
-};
-
-window.onclick = function(event) {
-  const regModal = document.getElementById('registration-modal');
-  const loginModal = document.getElementById('login-modal');
-  if (event.target === regModal) regModal.style.display = 'none';
-  if (event.target === loginModal) loginModal.style.display = 'none';
-};
-
-
 
 
   document.querySelectorAll('.focus-block').forEach(block => {
@@ -450,28 +417,43 @@ window.onclick = function(event) {
     }
   };
 
-const hamburger = document.getElementById('hamburger');
-const nav = document.querySelector('.nav');
-const navClose = document.getElementById('nav-close');
-const navLinks = document.querySelectorAll('.nav a');
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.querySelector('.nav');
+  const navClose = document.getElementById('nav-close');
 
-hamburger.addEventListener('click', function() {
-  nav.classList.toggle('active');
-});
+  if (!hamburger || !nav) return;
 
-navClose.addEventListener('click', function() {
-  nav.classList.remove('active');
-});
-
-navLinks.forEach(link => {
-  link.addEventListener('click', function () {
+  function openNav() {
+    nav.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav() {
     nav.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', function () {
+    nav.classList.toggle('active');
+    document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+  });
+
+  if (navClose) navClose.addEventListener('click', closeNav);
+
+  nav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', closeNav);
+  });
+
+ 
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeNav();
   });
 });
 
 </script>
 </body>
 </html>
+
 
 
 

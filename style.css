@@ -314,7 +314,7 @@ img, .hero {
   .hero {
     padding: 60px 0 40px 0;
     min-height: 400px;
-    margin-top: 50px; 
+    margin-top: 150px; 
   }
   .hero-title {
     font-size: 36px;
@@ -453,6 +453,7 @@ img, .hero {
   color: rgb(1, 13, 68);
   margin-bottom: 16px;
 }
+
 
 
 

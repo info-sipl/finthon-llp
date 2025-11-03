@@ -6,7 +6,7 @@
   height: 56px;
   border: none;
   border-radius: 50%;
-  background: linear-gradient(to bottom left, rgb(1, 68, 33) , rgb(77, 133, 104) 100%);
+  background: linear-gradient(to bottom left, rgb(1, 27, 68) , rgb(77, 109, 133) 100%);
   box-shadow: 0 4px 24px rgba(37, 99, 235, 0.18);
   display: flex;
   align-items: center;
@@ -15,14 +15,14 @@
   transition: box-shadow 0.2s, transform 0.2s;
   z-index: 2000;
   font-size: 2rem;
-  color: rgb(249, 246, 240);
+  color: rgb(240, 244, 249);
   animation: chatbot-float 2.5s ease-in-out infinite;
 }
 
 .chatbot-toggle:hover {
-  box-shadow: 0 8px 32px rgba(203, 160, 53, 0.8) ;
+  box-shadow: 0 8px 32px rgba(53, 118, 203, 0.8) ;
   transform: translateY(-6px) scale(1.08);
-  background: rgba(203, 160, 53, 0.8) ;
+  background: rgba(53, 118, 203, 0.8) ;
   border: 1px solid rgba(1, 68, 33, 0.5);
 }
 
@@ -41,9 +41,9 @@
   right: 24px;
   width: 300px;
   max-height: 400px;
-  background: rgb(249, 246, 240);
+  background: rgb(240, 244, 249);
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   display: none;
   flex-direction: column;
@@ -52,8 +52,8 @@
 
 .chatbot-header {
   font-family: Roboto;
-  background-color: rgb(1, 68, 33);
-  color: rgb(203, 161, 53);
+  background-color: rgb(1, 38, 68);
+  color: rgb(53, 118, 203);
   padding: 12px 16px;
   font-weight: bold;
   display: flex;
@@ -64,7 +64,7 @@
 .chatbot-close {
   background: none;
   border: none;
-  color: rgb(203, 161, 53);
+  color: rgb(53, 128, 203);
   font-size: 18px;
   cursor: pointer;
 }
@@ -73,14 +73,14 @@
   font-family: Roboto;
   padding: 16px;
   font-size: 14px;
-  color: rgb(1, 68, 33);
+  color: rgb(1, 30, 68);
   overflow-y: auto;
 }
 
 .chatbot-body .subtext {
   font-style: italic;
   margin-bottom: 12px;
-  color: rgba(1, 68, 33, 0.5);
+  color: rgba(1, 29, 68, 0.5);
 }
 
 .chatbot-list {
@@ -90,7 +90,7 @@
 
 .chatbot-list li {
   margin-bottom: 8px;
-  color: rgb(203, 161, 53) ;
+  color: rgb(53, 140, 203) ;
 }
 
 
@@ -98,14 +98,14 @@
 .chatbot-footer {
   display: flex;
   padding: 10px;
-  border-top: 1px solid rgb(203, 161, 53);
-  background: rgb(249, 246, 240)
+  border-top: 1px solid rgb(53, 135, 203);
+  background: rgb(240, 244, 249)
 }
 
 #chatbot-input {
   flex: 1;
   padding: 8px 12px;
-  border: 1px solid rgb(203, 161, 53);
+  border: 1px solid rgb(53, 103, 203);
   border-radius: 6px;
   font-size: 15px;
   outline: none;
@@ -114,8 +114,8 @@
 #chatbot-send {
   margin-left: 8px;
   padding: 8px 18px;
-  background: rgba(1, 68, 33, 0.8);
-  color: rgb(249, 246, 240);
+  background: rgba(1, 30, 68, 0.8);
+  color: rgb(240, 244, 249);
   border: none;
   border-radius: 6px;
   font-size: 15px;
@@ -124,5 +124,5 @@
 }
 
 #chatbot-send:hover {
-  background:rgb(77, 133, 104);
+  background:rgb(77, 107, 133);
 }

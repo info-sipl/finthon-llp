@@ -221,7 +221,6 @@ html, body {
   z-index: 9999; 
   backdrop-filter: none; 
 }
-}
 
 
   .nav a {
@@ -236,6 +235,7 @@ html, body {
     border-radius: 8px;
     padding: 8px 0;
   }
+}
 
 .hamburger {
   display: none;
@@ -453,5 +453,6 @@ img, .hero {
   color: rgb(1, 13, 68);
   margin-bottom: 16px;
 }
+
 
 

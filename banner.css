@@ -1,8 +1,8 @@
 .cta-banner {
-  background: linear-gradient(to bottom, rgb(255, 255, 255) , rgb(255, 211, 100)  );
+  background: linear-gradient(to bottom, rgb(255, 255, 255) , rgb(117, 177, 255)  );
   padding: 60px 20px;
   text-align: center;
-  color: rgb(98, 71, 0);
+  color: rgb(0, 15, 98);
   border-radius: 16px;
   margin: 60px 20px;
 }
@@ -46,13 +46,13 @@
 
 .cta-buttons .btn-primary {
   background: white;
-  color: rgb(98, 71, 0);
+  color: rgb(0, 13, 98);
   border: none;
 }
 
 .cta-buttons .btn-primary:hover {
-  background:  rgb(98, 71, 0);
-  color: rgb(255, 211, 100);
+  background:  rgb(0, 15, 98);
+  color: rgb(100, 141, 255);
 }
 
 .cta-buttons .btn-secondary {
@@ -63,5 +63,5 @@
 
 .cta-buttons .btn-secondary:hover {
   background: white;
-  color: rgb(98, 71, 0);
+  color: rgb(0, 5, 98);
 }

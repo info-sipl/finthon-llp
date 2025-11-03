@@ -193,7 +193,6 @@ html, body {
 .nav {
     order: 4;
   }
-}
 
   .nav {
     display: none;
@@ -221,6 +220,7 @@ html, body {
   text-align: center;
   z-index: 9999; 
   backdrop-filter: none; 
+}
 }
 
 
@@ -453,4 +453,5 @@ img, .hero {
   color: rgb(1, 13, 68);
   margin-bottom: 16px;
 }
+
 

@@ -113,7 +113,7 @@
 
 .about-image {
   flex: 1;
-  max-width: 100%;
+  max-width: 30%;
 }
 
 .about-image img {
@@ -121,3 +121,4 @@
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(53, 85, 203, 0.1);
 }
+

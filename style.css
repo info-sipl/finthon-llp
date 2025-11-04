@@ -275,7 +275,7 @@ html, body {
     padding: 100px 0 60px 0;
     background:
     linear-gradient(to right, rgba(1, 27, 68, 0.851) 20%, rgba(53, 93, 203, 0.25)),
-    url('https://images.pexels.com/photos/8550655/pexels-photo-8550655.jpeg?_gl=1*ir35z2*_ga*OTIxNjI1ODM2LjE3NTE1NDQwNDI.*_ga_8JE65Q40S6*czE3NTI3MzAzMzUkbzIkZzAkdDE3NTI3MzAzMzUkajYwJGwwJGgw') center/cover no-repeat;
+    url('fynpython bg.png') center/cover no-repeat;
     min-height: 600px;
     position: relative;
     max-width: 100%;
@@ -332,6 +332,7 @@ img, .hero {
     width: 100%;
   }
 }
+
 
 
 

@@ -99,30 +99,6 @@
   </div>
 </section>
 
-      <!-- <div class="focus-areas">
-      <h3 class="focus-title">Main Focus Areas:</h3>
-      <div class="focus-blocks">
-        <div class="focus-block">
-          Educational Support
-          <div class="focus-desc">
-            Guidance and resources for students and institutions to enhance learning outcomes and academic success.
-          </div>
-        </div>
-        <div class="focus-block">
-          Agricultural Wholesale (B2B Support)
-          <div class="focus-desc">
-            Streamlined solutions for agricultural businesses, connecting suppliers and buyers for efficient B2B transactions.
-          </div>
-        </div>
-        <div class="focus-block">
-          Business Enablement Services
-          <div class="focus-desc">
-            Comprehensive support for startups and enterprises, including registration, compliance, and growth consultancy.
-          </div>
-        </div>
-      </div> -->
-
-  <!-- Services -->
 
 <section class="services-section" id="services">
   <div class="container">
@@ -278,11 +254,36 @@
           <a href="#contact" class="btn-primary">Apply Now</a>
         </div>
       </div>
-
-      
     </div>
   </div>
 </section>
+
+
+<div id="applyModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Apply Now</h2>
+    <form id="applyForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact Number</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+  </div>
+</div>
+
 
 
 <section class="testimonials-section" id="testimonials">
@@ -601,27 +602,40 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+
+  const modal = document.getElementById("applyModal");
+  const closeBtn = document.querySelector(".close");
+  const applyButtons = document.querySelectorAll(".btn-primary[href='#contact']");
+
+  // Open popup when any "Apply Now" is clicked
+  applyButtons.forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      modal.style.display = "flex";
+    });
+  });
+
+  // Close popup when "X" is clicked
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Close popup when clicking outside
+  window.addEventListener("click", e => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Handle form submit
+  document.getElementById("applyForm").addEventListener("submit", e => {
+    e.preventDefault();
+    alert("Thank you! Your details have been submitted.");
+    modal.style.display = "none";
+    e.target.reset();
+  });
+
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

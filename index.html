@@ -24,6 +24,17 @@
   <link rel="stylesheet" href="contact.css" />
   <link rel="stylesheet" href="chatbot.css" />
   <link rel="stylesheet" href="footer.css" />
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "K35QqaKLLus1B_nYg",
+        });
+    })();
+  </script>
 </head>
 <body>
 
@@ -279,7 +290,7 @@
         <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
       </div>
 
-      <button type="submit" class="btn-submit">Submit</button>
+      <button type="submit" class="btn-submit" onclick="sendMail()">Submit</button>
     </form>
   </div>
 </div>
@@ -635,6 +646,16 @@ document.addEventListener('DOMContentLoaded', function () {
     modal.style.display = "none";
     e.target.reset();
   });
+
+  function sendMail() {
+    let parms = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      contact: document.getElementById("contact").value,
+    }
+
+    emailjs.send("service_z7otueb", "template_b6c06v7", parms).then(alert("Thank you! Your details have been submitted."));
+  }
 
 </script>
 </body>

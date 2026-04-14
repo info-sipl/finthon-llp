@@ -127,3 +127,23 @@
   .contact-left iframe { max-height: 320px; border-radius: 12px; }
   .contact-left { padding: 12px; border-radius: 14px; }
 }
+
+.contact-modern {
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-modern .section-head {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.contact-modern label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contact-modern p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}

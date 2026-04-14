@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="about.css" />
@@ -41,14 +42,14 @@
 
   <header class="header">
     <div class="container header-content">
-      <h1 class="logo" > <img src="Fynpython 6.jpg" alt="logo">FYNPYTHON LLP</h1>
+      <h1 class="logo" >FYNPYTHON LLP</h1>
      
       <nav class="nav">
          <button class="nav-close" id="nav-close">&times;</button>
         <a href="#hero">Home</a>
         <a href="#about">About Us</a>
         <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#contactgrid">Contact</a>
 
       </nav>
       <div class="header-buttons">
@@ -73,10 +74,16 @@
   
 <section class="cta-banner">
   <div class="cta-content">
+    
+    <!-- Added Image -->
+    <div class="cta-logo">
+      <img src="Fynpython 6-bgremove.png" alt="Fynpython Logo">
+    </div>
+
     <h2 class="cta-title">Ready to simplify your journey?</h2>
     <p class="cta-subtitle">Let FYNPYTHON LLP guide your next step.</p>
     <div class="cta-buttons">
-      <a href="#contact" class="btn-primary">Book Free Consultation</a>
+      <a href="#contactgrid" class="btn-primary">Book Free Consultation</a>
       <a href="#services" class="btn-secondary">Start a Service</a>
     </div>
   </div>
@@ -403,7 +410,7 @@
 
 
 
-<section class="contact-modern" id="contact">
+<section class="contact-modern" id="contactgrid">
   <div class="-contact-container">
    <h2 class="section-head">Get in Touch</h2>
   <div class="grid-container">
@@ -466,6 +473,55 @@
 
 <button class="chatbot-toggle" onclick="toggleChatbot()">💬</button>
 
+<!-- <div class="chatbot-body" id="chatbot-messages">
+  <p><strong>How can I help you today?</strong></p>
+  <p class="subtext">(I can help with MSME registration, PAN card, coaching help, and more!)</p>
+</div>
+
+<script>
+function toggleChatbot() {
+  const bot = document.getElementById("chatbot");
+  bot.style.display = bot.style.display === "block" ? "none" : "block";
+}
+</script>
+
+<script>
+  const input = document.getElementById("chatbot-input");
+  const sendBtn = document.getElementById("chatbot-send");
+  const messages = document.getElementById("chatbot-messages");
+
+  function addMessage(text, sender) {
+    const msg = document.createElement("p");
+    msg.className = sender;
+    msg.innerText = text;
+    messages.appendChild(msg);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function botReply() {
+    setTimeout(() => {
+      addMessage("Thanks for your query, please connect with 7003401308.", "bot-message");
+    }, 500);
+  }
+
+  sendBtn.addEventListener("click", () => {
+    const userText = input.value.trim();
+    if (userText === "") return;
+
+    addMessage(userText, "user-message");
+    input.value = "";
+
+    botReply();
+  });
+
+  input.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      sendBtn.click();
+    }
+  });
+</script> -->
+
+
 
   <footer class="footer">
   <div class="footer-container">
@@ -504,7 +560,7 @@
 
 
   <div class="footer-bottom">
-    <p>&copy; 2025 FynPython LLP. All rights reserved.</p>
+    <p>&copy; 2025 FynPython LLP. All rights reserved</p>
   </div>
 </footer>
 
